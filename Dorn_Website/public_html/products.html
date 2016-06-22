@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
+    </head>
+    <body>
+        
+
+<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+
+    <!-- off-canvas title bar for 'small' screen -->
+    <div class="title-bar" data-responsive-toggle="widemenu" data-hide-for="medium">
+      <div class="title-bar-left">
+        <button class="menu-icon" type="button" data-open="offCanvasLeft"></button>
+        <span class="title-bar-title">The Pipe-A-Dor</span>
+      </div>
+        <!--
+      <div class="title-bar-right">
+        <span class="title-bar-title">Login</span>
+        <button class="menu-icon" type="button" data-open="offCanvasRight"></button>
+      </div>
+        -->
+    </div>
+
+    <!-- off-canvas left menu -->
+    <div class="off-canvas position-left" id="offCanvasLeft" data-off-canvas>
+      <ul class="vertical dropdown menu" data-dropdown-menu>
+        <li><a href="aboutAdam.html">About Adam</a></li>
+        <li><a href="reviews.html">Customer Reviews</a></li>
+        <li><a href="contact.html">Contact Adam</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </div>
+
+    <!-- off-canvas right menu -->
+    <div class="off-canvas position-right" id="offCanvasRight" data-off-canvas data-position="right">
+      <ul class="vertical dropdown menu" data-dropdown-menu>
+        <li><a href="right_item_1">Right item 1</a></li>
+        <li><a href="right_item_2">Right item 2</a></li>
+        <li><a href="right_item_3">Right item 3</a></li>
+      </ul>
+    </div>
+
+    <!-- "wider" top-bar menu for 'medium' and up -->
+    <div id="widemenu" class="top-bar">
+      <div class="top-bar-left">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li class="menu-text">The Pipe-A-Dor</li>
+          <li><a href="aboutAdam.html">About Adam</a></li>
+          <li><a href="reviews.html">Customer Reviews</a>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="menu">
+            <li><a href="contact.html">Contact Adam</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- original content goes in this container -->
+    <div class="off-canvas-content" data-off-canvas-content>
+        
+      <div class="row column">
+          <!-- Content here -->
+          <div class="media-object stack-for-small">
+            <div class="media-object-section">
+              <img class="thumbnail" src="http://placehold.it/200x200">
+            </div>
+            <div class="media-object-section">
+              <h5>The Original Pipe-A-Dor</h5>
+              <p>I
+                  The original Pipe-A-Dor. Insert short paragraph description. Include information about color,
+                  size, layout, construction.
+              </p>
+            </div>
+              <hr>
+          </div>
+          
+          
+          
+      </div>
+            
+      </div>
+    </div>
+
+  <!-- close wrapper, no more content after this -->
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="http://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+    </body>
+</html>
