@@ -103,13 +103,13 @@ and open the template in the editor.
       <div class="row">
           <!-- Content here -->
           <div class="medium-6 columns medium-push-6">
-              <form id="techsupport-form">
+              <form id="techsupport-form" action="MAILTO:jf56450@yahoo.com">
                 <label><b>Email:</b></label>
-                    <input type="email" placeholder="Your email here.">
-                    <textarea rows="10" name="comment" form="techsupport-form" placeholder="Leave a comment, suggestion, or question...">
+                    <input type="email" placeholder="Your email here." id="email_address">
+                    <textarea id="email_content" rows="10" name="comment" form="techsupport-form" placeholder="Leave a comment, suggestion, or question...">
                         
                     </textarea>
-                    <a class="button">Contact Adam</a>
+                    <a class="button" onclick="SendEmail();">Contact Adam</a>
             </form>
           </div>
           <div class="medium-6 columns medium-pull-6 techsupport-form">
@@ -151,5 +151,12 @@ and open the template in the editor.
       $(document).foundation();
     </script>
     <script src="resources/foundation-6.2.1-complete/js/vendor/social-icons.js"></script>
+    <script>
+        function SendEmail()
+        {
+            document.getElementById("techsupport-form").submit();
+            
+        }
+    </script>
     </body>
 </html>
